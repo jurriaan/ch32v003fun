@@ -2673,6 +2673,8 @@ typedef struct
 #if defined(CH32V10x) || defined(CH32V30x)
 #define SPI3                					((SPI_TypeDef *) SPI3_BASE)
 #endif
+#endif
+#if defined(CH32V10x) || defined(CH32V20x) || defined(CH32V30x) || defined(CH32X03x)
 #define USART2                                  ((USART_TypeDef *)USART2_BASE)
 #define USART3                                  ((USART_TypeDef *)USART3_BASE)
 #define UART4                                   ((USART_TypeDef *)UART4_BASE)
